@@ -1,4 +1,4 @@
-package com.stephenhu.bipennis.authservice;
+package com.stephenhu.bipennis.userservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

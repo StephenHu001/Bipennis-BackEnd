@@ -61,7 +61,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!--                    <skip>true</skip>-->
-                    <mainClass>com.stephenhu.bipennis.authservice.UserServiceApplication</mainClass>
+                    <mainClass>com.stephenhu.bipennis.userservice.UserServiceApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

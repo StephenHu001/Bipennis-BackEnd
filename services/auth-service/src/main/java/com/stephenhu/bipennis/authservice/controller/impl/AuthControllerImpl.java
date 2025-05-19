@@ -1,9 +1,9 @@
 package com.stephenhu.bipennis.authservice.controller.impl;
 
-import com.stephenhu.bipennis.authservice.controller.AuthController;
 import com.stephenhu.bipennis.authservice.controller.publicmethod.JudgeMethod;
 import com.stephenhu.bipennis.authservice.dao.impl.SpareEmailCrudRepositoryImpl;
 import com.stephenhu.bipennis.authservice.service.AuthService;
+import com.stephenhu.bipennis.authservice.controller.AuthController;
 import com.stephenhu.bipennis.model.DTO.autherservice.LoginDTO;
 import com.stephenhu.bipennis.model.DTO.autherservice.RegisterDTO;
 import com.stephenhu.bipennis.model.VO.authservice.LoginPageVO;

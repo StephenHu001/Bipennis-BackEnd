@@ -73,7 +73,7 @@ com.alibaba.nacos.api.exception.NacosException: Client not connected, current st
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
 2025-05-18 00:51:32.757 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
 2025-05-18 00:51:32.789 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
 2025-05-18 00:51:32.813 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
@@ -97,7 +97,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
 Caused by: java.lang.reflect.UndeclaredThrowableException: null
 	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
@@ -206,7 +206,7 @@ com.alibaba.nacos.api.exception.NacosException: Client not connected, current st
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
 2025-05-18 00:52:11.847 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
 2025-05-18 00:52:11.880 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
 2025-05-18 00:52:11.903 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
@@ -230,7 +230,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:15)
 Caused by: java.lang.reflect.UndeclaredThrowableException: null
 	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)

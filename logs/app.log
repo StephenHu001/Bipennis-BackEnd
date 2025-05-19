@@ -77,7 +77,7 @@ com.alibaba.nacos.api.exception.NacosException: Client not connected, current st
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:16)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:16)
 2025-05-19 10:44:20.951 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
 2025-05-19 10:44:20.976 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
 2025-05-19 10:44:20.994 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
@@ -101,7 +101,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at com.stephenhu.bipennis.authservice.AuthServiceApplication.main(AuthServiceApplication.java:16)
+	at com.stephenhu.bipennis.userservice.AuthServiceApplication.main(AuthServiceApplication.java:16)
 Caused by: java.lang.reflect.UndeclaredThrowableException: null
 	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
@@ -606,7 +606,7 @@ Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,
 org.springframework.dao.DuplicateKeyException: 
 ### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
 ### The error may exist in com/stephenhu/bipennis/authservice/mapper/UserInfoMapper.java (best guess)
-### The error may involve com.stephenhu.bipennis.authservice.mapper.UserInfoMapper.insert-Inline
+### The error may involve com.stephenhu.bipennis.userservice.mapper.UserInfoMapper.insert-Inline
 ### The error occurred while setting parameters
 ### SQL: INSERT INTO t_userinfo  ( u_id, first_name, last_name, gender, avatar, birthdate )  VALUES (  ?, ?, ?, ?, ?, ?  )
 ### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
@@ -621,9 +621,9 @@ org.springframework.dao.DuplicateKeyException:
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
 	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:81)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:81)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -697,9 +697,9 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'd
 2025-05-19 11:04:17.460 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error] with root cause
 com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error
 	at com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler.throwApiException(ErrorHandler.java:38)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:97)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:97)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -763,7 +763,7 @@ com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal 
 org.springframework.dao.DuplicateKeyException: 
 ### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
 ### The error may exist in com/stephenhu/bipennis/authservice/mapper/UserInfoMapper.java (best guess)
-### The error may involve com.stephenhu.bipennis.authservice.mapper.UserInfoMapper.insert-Inline
+### The error may involve com.stephenhu.bipennis.userservice.mapper.UserInfoMapper.insert-Inline
 ### The error occurred while setting parameters
 ### SQL: INSERT INTO t_userinfo  ( u_id, first_name, last_name, gender, avatar, birthdate )  VALUES (  ?, ?, ?, ?, ?, ?  )
 ### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
@@ -778,9 +778,9 @@ org.springframework.dao.DuplicateKeyException:
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
 	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:81)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:81)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -854,9 +854,9 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'd
 2025-05-19 11:06:37.321 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error] with root cause
 com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error
 	at com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler.throwApiException(ErrorHandler.java:38)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:97)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:97)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -993,7 +993,7 @@ com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal 
 org.springframework.dao.DuplicateKeyException: 
 ### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
 ### The error may exist in com/stephenhu/bipennis/authservice/mapper/UserInfoMapper.java (best guess)
-### The error may involve com.stephenhu.bipennis.authservice.mapper.UserInfoMapper.insert-Inline
+### The error may involve com.stephenhu.bipennis.userservice.mapper.UserInfoMapper.insert-Inline
 ### The error occurred while setting parameters
 ### SQL: INSERT INTO t_userinfo  ( u_id, first_name, last_name, gender, avatar, birthdate )  VALUES (  ?, ?, ?, ?, ?, ?  )
 ### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'default.png' for key 'avatar'
@@ -1008,9 +1008,9 @@ org.springframework.dao.DuplicateKeyException:
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
 	at jdk.proxy2/jdk.proxy2.$Proxy117.insert(Unknown Source)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:84)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:84)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -1084,9 +1084,9 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'd
 2025-05-19 11:12:20.883 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error] with root cause
 com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal server error
 	at com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler.throwApiException(ErrorHandler.java:38)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:100)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:100)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -1255,9 +1255,9 @@ com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Internal 
 2025-05-19 11:19:24.549 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid argument] with root cause
 com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid argument
 	at com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler.throwApiException(ErrorHandler.java:38)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:57)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:57)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -1399,9 +1399,9 @@ com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid a
 2025-05-19 11:23:08.255 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid argument] with root cause
 com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid argument
 	at com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler.throwApiException(ErrorHandler.java:38)
-	at com.stephenhu.bipennis.authservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:57)
-	at com.stephenhu.bipennis.authservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
-	at com.stephenhu.bipennis.authservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:83)
+	at com.stephenhu.bipennis.userservice.dao.impl.UserInfoCrudRepositoryImpl.insertUserInfo(UserInfoCrudRepositoryImpl.java:57)
+	at com.stephenhu.bipennis.userservice.service.impl.AuthServiceImpl.register(AuthServiceImpl.java:126)
+	at com.stephenhu.bipennis.userservice.controller.impl.AuthControllerImpl.register(AuthControllerImpl.java:83)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -1713,3 +1713,14 @@ com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException: Invalid a
 2025-05-19 14:38:41.451 [http-nio-8080-exec-5] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
 2025-05-19 14:38:41.453 [http-nio-8080-exec-5] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
 2025-05-19 14:38:41.471 [http-nio-8080-exec-5] INFO  c.s.b.a.d.i.SpareEmailCrudRepositoryImpl - Register successful for user: RegisterDTO(firstName=Hu, lastName=Stephen, uEmail=stephenhu031028@gmail.com, uPhone=+86 17387520730, birthdate=2003-10-28, hashPassword=20021004@Dahuzi)
+2025-05-19 15:01:33.047 [Thread-18] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-05-19 15:01:33.048 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-05-19 15:01:33.047 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-19 15:01:33.049 [Thread-16] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-05-19 15:01:33.049 [Thread-18] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-05-19 15:01:33.049 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-19 15:01:33.098 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-05-19 15:01:33.107 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2025-05-19 15:01:33.133 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19 15:01:33.138 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-19 15:01:33.152 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

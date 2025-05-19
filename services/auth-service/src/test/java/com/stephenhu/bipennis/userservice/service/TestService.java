@@ -1,8 +1,6 @@
-package com.stephenhu.bipennis.authservice.service;
+package com.stephenhu.bipennis.userservice.service;
 
-import com.stephenhu.bipennis.authservice.dao.SecondaryEmailCrudRepository;
-import com.stephenhu.bipennis.authservice.dao.impl.SecondaryEmailCrudRepositoryImpl;
-import com.stephenhu.bipennis.model.BO.authservice.SecondaryEmailBO;
+import com.stephenhu.bipennis.authservice.service.AuthService;
 import com.stephenhu.bipennis.model.DTO.autherservice.LoginDTO;
 import com.stephenhu.bipennis.model.DTO.autherservice.RegisterDTO;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.response.ResponseResult;

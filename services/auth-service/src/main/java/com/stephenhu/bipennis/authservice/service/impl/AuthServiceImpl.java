@@ -1,11 +1,11 @@
 package com.stephenhu.bipennis.authservice.service.impl;
 
 import cn.dev33.satoken.secure.BCrypt;
+import com.stephenhu.bipennis.authservice.service.AuthService;
 import com.stephenhu.bipennis.authservice.dao.SecondaryEmailCrudRepository;
 import com.stephenhu.bipennis.authservice.dao.UserCrudRepository;
 import com.stephenhu.bipennis.authservice.dao.UserInfoCrudRepository;
 import com.stephenhu.bipennis.authservice.dao.impl.SpareEmailCrudRepositoryImpl;
-import com.stephenhu.bipennis.authservice.service.AuthService;
 import com.stephenhu.bipennis.model.BO.authservice.SecondaryEmailBO;
 import com.stephenhu.bipennis.model.BO.authservice.SpareEmailBO;
 import com.stephenhu.bipennis.model.BO.authservice.UserBO;

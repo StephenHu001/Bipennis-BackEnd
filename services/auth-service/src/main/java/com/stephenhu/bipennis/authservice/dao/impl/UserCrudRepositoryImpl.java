@@ -2,8 +2,8 @@ package com.stephenhu.bipennis.authservice.dao.impl;
 
 import cn.dev33.satoken.secure.BCrypt;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.stephenhu.bipennis.authservice.dao.UserCrudRepository;
 import com.stephenhu.bipennis.authservice.mapper.UserMapper;
+import com.stephenhu.bipennis.authservice.dao.UserCrudRepository;
 import com.stephenhu.bipennis.model.BO.authservice.UserBO;
 import com.stephenhu.bipennis.model.DO.authservice.UserDO;
 import com.stephenhu.bipennis.model.PO.authservice.UserPO;
