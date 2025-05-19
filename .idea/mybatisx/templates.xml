@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TemplatesSettings">
+    <option name="templateConfigs">
+      <TemplateContext>
+        <option name="generateConfig">
+          <GenerateConfig>
+            <option name="annotationType" value="JPA" />
+            <option name="basePackage" value="" />
+            <option name="basePath" value="src/main/java/com/stephenhu/bipennis/model" />
+            <option name="classNameStrategy" value="camel" />
+            <option name="encoding" value="UTF-8" />
+            <option name="extraClassSuffix" value="" />
+            <option name="ignoreFieldPrefix" value="" />
+            <option name="ignoreFieldSuffix" value="" />
+            <option name="ignoreTablePrefix" value="" />
+            <option name="ignoreTableSuffix" value="" />
+            <option name="moduleName" value="model" />
+            <option name="modulePath" value="$PROJECT_DIR$/Model" />
+            <option name="moduleUIInfoList">
+              <list>
+                <ModuleInfoGo>
+                  <option name="basePath" value="src/main/java/com/stephenhu/bipennis/model" />
+                  <option name="configFileName" value="domain.ftl" />
+                  <option name="configName" value="domain" />
+                  <option name="encoding" value="UTF-8" />
+                  <option name="fileName" value="${domain.fileName}" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/Model" />
+                  <option name="packageName" value="." />
+                </ModuleInfoGo>
+              </list>
+            </option>
+            <option name="needsModel" value="true" />
+            <option name="relativePackage" value="" />
+            <option name="superClass" value="" />
+            <option name="tableUIInfoList">
+              <list>
+                <TableUIInfo>
+                  <option name="className" value="REmail" />
+                  <option name="tableName" value="r_email" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="SEmail" />
+                  <option name="tableName" value="s_email" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="TUser" />
+                  <option name="tableName" value="t_user" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="TUserinfo" />
+                  <option name="tableName" value="t_userinfo" />
+                </TableUIInfo>
+              </list>
+            </option>
+            <option name="templatesName" value="custom-model-swagger" />
+          </GenerateConfig>
+        </option>
+        <option name="moduleName" value="model" />
+        <option name="projectPath" value="$PROJECT_DIR$" />
+        <option name="templateName" value="custom-model-swagger" />
+      </TemplateContext>
+    </option>
+  </component>
+</project>

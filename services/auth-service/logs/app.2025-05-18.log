@@ -1,0 +1,244 @@
+2025-05-18 03:05:23.878 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:05:23.901 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:05:23.902 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:05:23.913 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:05:24.162 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 26492 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:05:24.163 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:05:25.913 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:05:25.917 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:05:25.966 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:05:25.999 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:05:26.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:05:26.027 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:05:26.524 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:05:27.246 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:05:27.252 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:05:27.273 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:05:27.752 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:05:28.387 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:05:28.501 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:05:28.569 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:05:29.188 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:05:29.312 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:05:29.891 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:05:29.900 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:05:30.274 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:05:30.285 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:05:30.390 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:05:30.390 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:05:30.436 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:05:30.437 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:05:30.964 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:05:32.967 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:05:33.057 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 10.052 seconds (process running for 12.052)
+2025-05-18 03:05:34.210 [main] WARN  c.s.b.a.d.i.SpareEmailCrudRepositoryImpl - Invalid parameter: UID=1, LastName=Hu, Birthdate=null
+2025-05-18 03:05:34.260 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:05:34.261 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:05:34.299 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:05:34.303 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:05:34.316 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-18 03:06:20.259 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:06:20.266 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:06:20.267 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:06:20.277 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:06:20.495 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 14188 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:06:20.496 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:06:22.200 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:06:22.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:06:22.251 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:06:22.288 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:06:22.291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:06:22.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:06:22.800 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:06:23.559 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:06:23.565 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:06:23.586 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:06:24.036 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:06:24.611 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:06:24.724 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:06:24.787 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:06:25.414 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:06:25.536 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:06:26.100 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:06:26.110 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:06:26.476 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:06:26.487 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:06:26.599 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:06:26.599 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:06:26.646 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:06:26.646 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:06:27.175 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:06:29.292 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:06:29.382 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 9.984 seconds (process running for 11.91)
+2025-05-18 03:06:30.481 [main] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+2025-05-18 03:06:30.487 [main] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2025-05-18 03:06:30.490 [main] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.5.0, Thread Name: main
+2025-05-18 03:06:30.493 [main] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2025-05-18 03:06:30.494 [main] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2025-05-18 03:06:30.495 [main] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+2025-05-18 03:06:30.761 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:06:30.762 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:06:30.801 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:06:30.806 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:06:30.815 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-18 03:07:40.433 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:07:40.441 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:07:40.441 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:07:40.451 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:07:40.654 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 30504 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:07:40.667 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:07:42.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:07:42.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:07:42.488 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:07:42.535 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:07:42.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:07:42.566 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:07:43.051 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:07:43.836 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:07:43.843 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:07:43.862 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:07:44.343 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:07:44.952 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:07:45.070 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:07:45.135 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:07:45.759 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:07:45.879 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:07:46.454 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:07:46.463 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:07:46.856 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:07:46.865 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:07:46.960 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:07:46.960 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:07:47.010 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:07:47.010 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:07:47.540 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:07:49.570 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:07:49.666 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 10.117 seconds (process running for 12.099)
+2025-05-18 03:07:50.771 [main] WARN  c.s.b.a.d.i.SpareEmailCrudRepositoryImpl - Non-default fields provided: Avatar=null, Gender=Male
+2025-05-18 03:07:50.815 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:07:50.816 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:07:50.851 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:07:50.855 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:07:50.867 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-18 03:27:39.165 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:27:39.171 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:27:39.172 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:27:39.182 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:27:39.407 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 22580 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:27:39.408 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:27:41.137 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:27:41.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:27:41.182 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:27:41.216 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:27:41.219 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:27:41.258 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:27:41.711 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:27:42.439 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:27:42.445 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:27:42.464 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:27:42.939 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:27:43.548 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:27:43.674 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:27:43.746 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:27:44.380 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:27:44.497 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:27:45.056 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:27:45.064 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:27:45.468 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:27:45.477 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:27:45.583 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:27:45.584 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:27:45.630 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:27:45.630 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:27:46.170 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:27:48.246 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:27:48.337 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 10.024 seconds (process running for 11.977)
+2025-05-18 03:27:49.442 [main] WARN  c.s.b.a.d.i.SpareEmailCrudRepositoryImpl - Invalid password parameter: 20021004@Dahuzi
+2025-05-18 03:27:49.483 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:27:49.484 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:27:49.520 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:27:49.525 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:27:49.536 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-18 03:28:57.164 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:28:57.171 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:28:57.172 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:28:57.188 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:28:57.428 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 30844 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:28:57.430 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:28:59.454 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:28:59.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:28:59.521 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:28:59.566 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:28:59.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:28:59.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:29:00.165 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:29:00.943 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:29:00.953 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:29:00.977 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:29:01.491 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:29:02.185 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:29:02.348 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:29:02.433 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:29:03.160 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:29:03.310 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:29:03.907 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:29:03.916 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:29:04.338 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:29:04.350 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:29:04.445 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:29:04.446 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:29:04.490 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:29:04.491 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:29:05.136 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:29:07.390 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:29:07.495 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 11.441 seconds (process running for 14.655)
+2025-05-18 03:31:56.840 [main] WARN  c.s.b.a.d.i.SpareEmailCrudRepositoryImpl - Invalid password parameter: 20021004@Dahuzi
+2025-05-18 03:31:56.938 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:31:56.939 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:31:56.994 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:31:57.000 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:31:57.014 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-05-18 03:32:06.308 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:32:06.314 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-05-18 03:32:06.315 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-05-18 03:32:06.325 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-05-18 03:32:06.538 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Starting TestDao using Java 23.0.1 with PID 33272 (started by Stephen Hu in D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\services\auth-service)
+2025-05-18 03:32:06.541 [main] INFO  c.s.bipennis.authservice.dao.TestDao - The following 1 profile is active: "dev"
+2025-05-18 03:32:08.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:32:08.298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-18 03:32:08.344 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2025-05-18 03:32:08.381 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-18 03:32:08.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-18 03:32:08.406 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-18 03:32:08.870 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0a3ca1b-e67c-3683-9447-363bc3373b97
+2025-05-18 03:32:09.592 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-18 03:32:09.597 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-18 03:32:09.618 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-05-18 03:32:10.112 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-05-18 03:32:10.683 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-18 03:32:10.811 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-18 03:32:10.875 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-18 03:32:11.481 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-18 03:32:11.596 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-18 03:32:12.170 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-18 03:32:12.181 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:32:12.578 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO".
+2025-05-18 03:32:12.588 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:32:12.696 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserInfoPO".
+2025-05-18 03:32:12.696 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserInfoPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:32:12.745 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.stephenhu.bipennis.model.PO.authservice.UserPO".
+2025-05-18 03:32:12.745 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.stephenhu.bipennis.model.PO.authservice.UserPO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-05-18 03:32:13.305 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-18 03:32:15.311 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-18 03:32:15.391 [main] INFO  c.s.bipennis.authservice.dao.TestDao - Started TestDao in 9.943 seconds (process running for 11.901)
+2025-05-18 03:32:16.639 [main] INFO  org.dozer.config.GlobalSettings - Trying to find Dozer configuration file: dozer.properties
+2025-05-18 03:32:16.642 [main] WARN  org.dozer.config.GlobalSettings - Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2025-05-18 03:32:16.645 [main] INFO  org.dozer.DozerInitializer - Initializing Dozer. Version: 5.5.0, Thread Name: main
+2025-05-18 03:32:16.648 [main] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2025-05-18 03:32:16.649 [main] INFO  org.dozer.jmx.JMXPlatformImpl - Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2025-05-18 03:32:16.651 [main] INFO  org.dozer.DozerBeanMapper - Initializing a new instance of dozer bean mapper.
+2025-05-18 03:32:16.955 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-05-18 03:32:16.956 [Thread-2] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-05-18 03:32:16.991 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-18 03:32:16.996 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-05-18 03:32:17.008 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
