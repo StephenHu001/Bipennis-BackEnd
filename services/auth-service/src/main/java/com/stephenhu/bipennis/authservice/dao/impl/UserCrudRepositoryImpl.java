@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.stephenhu.bipennis.authservice.mapper.UserMapper;
 import com.stephenhu.bipennis.authservice.dao.UserCrudRepository;
 import com.stephenhu.bipennis.model.BO.authservice.UserBO;
-import com.stephenhu.bipennis.model.DO.authservice.UserDO;
 import com.stephenhu.bipennis.model.PO.authservice.UserPO;
 import com.stephenhu.bipennis.util.DozerStruct.DozerStruct;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.code.Code;
@@ -63,9 +62,7 @@ public final class UserCrudRepositoryImpl implements UserCrudRepository {
             if (userPO == null) {
                 return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
             } else {
-                UserDO userDO = new DozerStruct<UserPO, UserDO>().transForm(userPO, UserDO.class);
-
-                userBO = new DozerStruct<UserDO, UserBO>().transForm(userDO, UserBO.class);
+                userBO = new DozerStruct<UserPO, UserBO>().transForm(userPO, UserBO.class);
                 return new ResponseResult<>(Code.OK, "EXISTENCE", userBO);
             }
         } catch (ApiException e) {
@@ -103,8 +100,8 @@ public final class UserCrudRepositoryImpl implements UserCrudRepository {
             if (userPO == null) {
                 return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
             } else {
-                UserDO userDO = new DozerStruct<UserPO, UserDO>().transForm(userPO, UserDO.class);
-                userBO = new DozerStruct<UserDO, UserBO>().transForm(userDO, UserBO.class);
+
+                userBO = new DozerStruct<UserPO, UserBO>().transForm(userPO, UserBO.class);
 
                 return new ResponseResult<>(Code.OK, "EXISTENCE", userBO);
             }
@@ -144,9 +141,7 @@ public final class UserCrudRepositoryImpl implements UserCrudRepository {
                 ErrorHandler.throwApiException(Code.NOT_FOUND, "UserCrudRepositoryImpl.findByUid");
                 return new ResponseResult<>();
             } else {
-
-                UserDO userDO = new DozerStruct<UserPO, UserDO>().transForm(userPO, UserDO.class);
-                userBO = new DozerStruct<UserDO, UserBO>().transForm(userDO, UserBO.class);
+                userBO = new DozerStruct<UserPO, UserBO>().transForm(userPO, UserBO.class);
                 return new ResponseResult<>(Code.OK, "EXISTENCE", userBO);
             }
         } catch (ApiException e) {

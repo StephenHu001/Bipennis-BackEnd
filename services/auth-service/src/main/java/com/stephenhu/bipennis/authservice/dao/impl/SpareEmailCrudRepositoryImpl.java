@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.stephenhu.bipennis.authservice.dao.SpareEmailCrudRepository;
 import com.stephenhu.bipennis.authservice.mapper.SpareEmailMapper;
 import com.stephenhu.bipennis.model.BO.authservice.SpareEmailBO;
-import com.stephenhu.bipennis.model.DO.authservice.SpareEmailDO;
 import com.stephenhu.bipennis.model.PO.authservice.SpareEmailPO;
 import com.stephenhu.bipennis.util.DozerStruct.DozerStruct;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException;
@@ -63,10 +62,7 @@ public final class SpareEmailCrudRepositoryImpl implements SpareEmailCrudReposit
             if (spareEmailPO == null) {
                 return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
             } else {
-                //这一步属于mapper层给我们的PO要转变成属于我们dao层的DO，就是变成我们dao层需要的DO（少一些属性字段），这属于我们业务所需要到的东西
-                SpareEmailDO spareEmailDO = new DozerStruct<SpareEmailPO, SpareEmailDO>().transForm(spareEmailPO, SpareEmailDO.class);
-                //这一步属于我们要与服务层通信所以需要放回BO出去
-                spareEmailBO = new DozerStruct<SpareEmailDO, SpareEmailBO>().transForm(spareEmailDO, SpareEmailBO.class);
+                spareEmailBO = new DozerStruct<SpareEmailPO, SpareEmailBO>().transForm(spareEmailPO, SpareEmailBO.class);
                 //放回结果
                 return new ResponseResult<>(Code.OK, "EXISTENCE", spareEmailBO);
             }
