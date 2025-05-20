@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public final class JudgeMethod {
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(JudgeMethod.class);
     public boolean isRightRegisterPageVO(RegisterPageVO registerPageVO){
         if (registerPageVO.getUPhone() == null ||
                 registerPageVO.getUPhone().trim().isEmpty() ||

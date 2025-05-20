@@ -23,7 +23,7 @@ public final class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCru
     /**
      * 日志记录器
      */
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(SecondaryEmailCrudRepositoryImpl.class);
 
     private final SecondaryEmailMapper secondaryEmailMapper;
 

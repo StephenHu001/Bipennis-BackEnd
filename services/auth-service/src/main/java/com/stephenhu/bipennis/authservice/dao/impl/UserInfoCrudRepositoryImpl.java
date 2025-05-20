@@ -24,7 +24,7 @@ public final class UserInfoCrudRepositoryImpl implements UserInfoCrudRepository 
     /**
      * 日志记录器
      */
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserInfoCrudRepositoryImpl.class);
 
     private static final String DEFAULT_GENDER = "保密";
 

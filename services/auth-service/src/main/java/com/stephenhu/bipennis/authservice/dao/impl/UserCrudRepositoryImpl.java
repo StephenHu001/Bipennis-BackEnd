@@ -30,7 +30,7 @@ public final class UserCrudRepositoryImpl implements UserCrudRepository {
     /**
      * 日志记录器
      */
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserCrudRepositoryImpl.class);
 
     private final UserMapper userMapper;
 

@@ -30,7 +30,7 @@ import org.springframework.stereotype.Service;
 @Service
 public final class AuthServiceImpl implements AuthService {
 
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(AuthServiceImpl.class);
 
     private final SpareEmailCrudRepositoryImpl spareEmailCrudRepository;
 

@@ -26,7 +26,7 @@ public final class AuthControllerImpl implements AuthController{
     /**
      * 日志记录器
      */
-    private static final Logger logger = LoggerFactory.getLogger(SpareEmailCrudRepositoryImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(AuthControllerImpl.class);
 
     private final AuthService authService;
 
