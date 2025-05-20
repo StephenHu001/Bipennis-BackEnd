@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stephenhu.bipennis.userservice.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.stephenhu.bipennis.model.PO.userservice.UserPO">
+            <id property="uId" column="u_id" jdbcType="BIGINT"/>
+            <result property="uEmail" column="u_email" jdbcType="VARCHAR"/>
+            <result property="uPhone" column="u_phone" jdbcType="VARCHAR"/>
+            <result property="hashPassword" column="hash_password" jdbcType="VARCHAR"/>
+            <result property="createAt" column="create_at" jdbcType="TIMESTAMP"/>
+            <result property="updateAt" column="update_at" jdbcType="TIMESTAMP"/>
+            <result property="reservedBigint1" column="reserved_bigint1" jdbcType="BIGINT"/>
+            <result property="reservedBigint2" column="reserved_bigint2" jdbcType="BIGINT"/>
+            <result property="reservedBigint3" column="reserved_bigint3" jdbcType="BIGINT"/>
+            <result property="reservedBigint4" column="reserved_bigint4" jdbcType="BIGINT"/>
+            <result property="reservedDecimal1" column="reserved_decimal1" jdbcType="DECIMAL"/>
+            <result property="reservedDecimal2" column="reserved_decimal2" jdbcType="DECIMAL"/>
+            <result property="reservedDecimal3" column="reserved_decimal3" jdbcType="DECIMAL"/>
+            <result property="reservedDecimal4" column="reserved_decimal4" jdbcType="DECIMAL"/>
+            <result property="reservedVarchar1" column="reserved_varchar1" jdbcType="VARCHAR"/>
+            <result property="reservedVarchar2" column="reserved_varchar2" jdbcType="VARCHAR"/>
+            <result property="reservedVarchar3" column="reserved_varchar3" jdbcType="VARCHAR"/>
+            <result property="reservedVarchar4" column="reserved_varchar4" jdbcType="VARCHAR"/>
+            <result property="reservedDatetime1" column="reserved_datetime1" jdbcType="TIMESTAMP"/>
+            <result property="reservedDatetime2" column="reserved_datetime2" jdbcType="TIMESTAMP"/>
+            <result property="reservedDatetime3" column="reserved_datetime3" jdbcType="TIMESTAMP"/>
+            <result property="reservedDatetime4" column="reserved_datetime4" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        u_id,u_email,u_phone,
+        hash_password,create_at,update_at,
+        reserved_bigint1,reserved_bigint2,reserved_bigint3,
+        reserved_bigint4,reserved_decimal1,reserved_decimal2,
+        reserved_decimal3,reserved_decimal4,reserved_varchar1,
+        reserved_varchar2,reserved_varchar3,reserved_varchar4,
+        reserved_datetime1,reserved_datetime2,reserved_datetime3,
+        reserved_datetime4
+    </sql>
+</mapper>
