@@ -108,7 +108,7 @@ public class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCrudRepos
     @Override
     public ResponseResult<SecondaryEmailBO> update(SecondaryEmailBO secondaryEmailBO) {
         try {
-            if (!isRightUpdateSecondaryEmailBO(secondaryEmailBO) || secondaryEmailBO.getUId() == null || secondaryEmailBO.getReId().trim().isEmpty()) {
+            if (!isRightUpdateSecondaryEmailBO(secondaryEmailBO)) {
                 ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "SecondaryEmailCrudRepositoryImpl.update");
             }
 
