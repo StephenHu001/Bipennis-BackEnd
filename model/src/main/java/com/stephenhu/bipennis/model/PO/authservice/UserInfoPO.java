@@ -24,7 +24,7 @@ import java.util.Date;
 @Entity
 public final class UserInfoPO {
     @Id
-    private String uinfoId;
+    private String uiId;
     private String uId;
     private String firstName;
     private String lastName;

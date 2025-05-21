@@ -5,7 +5,7 @@
 <mapper namespace="com.stephenhu.bipennis.userservice.mapper.UserInfoMapper">
 
     <resultMap id="BaseResultMap" type="com.stephenhu.bipennis.model.PO.userservice.UserInfoPO">
-        <id property="uinfoId" column="ui_id" jdbcType="BIGINT"/>
+        <id property="uiId" column="ui_id" jdbcType="BIGINT"/>
         <result property="uId" column="u_id" jdbcType="BIGINT"/>
         <result property="firstName" column="first_name" jdbcType="VARCHAR"/>
         <result property="lastName" column="last_name" jdbcType="VARCHAR"/>
@@ -35,7 +35,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        uinfoId
+        ui_id
         ,u_id,first_name,
         last_name,gender,gender_is_public,avatar,
         birthdate,birthdate_is_public,create_at,update_at,

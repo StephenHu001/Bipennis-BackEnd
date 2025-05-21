@@ -21,7 +21,7 @@ import java.io.Serializable;
 @Entity
 public final class UserInfoPO {
     @Id
-    private String uinfoId;
+    private String uiId;
     private String uId;
     private String firstName;
     private String lastName;

@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public final class UserInfoBO {
+    private String uinfoId;
     private String uId;
     private String firstName;
     private String lastName;
