@@ -22,7 +22,7 @@ import java.util.Date;
 @NoArgsConstructor
 @TableName(value = "t_userinfo")
 @Entity
-public final class UserInfoPO implements Serializable {
+public final class UserInfoPO {
     @Id
     private String uinfoId;
     private String uId;

@@ -1,9 +1,7 @@
 package com.stephenhu.bipennis.userservice.dao.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.stephenhu.bipennis.model.BO.userservice.SecondaryEmailBO;
 import com.stephenhu.bipennis.model.BO.userservice.SpareEmailBO;
-import com.stephenhu.bipennis.model.PO.userservice.SecondaryEmailPO;
 import com.stephenhu.bipennis.model.PO.userservice.SpareEmailPO;
 import com.stephenhu.bipennis.userservice.dao.SpareEmailCrudRepository;
 import com.stephenhu.bipennis.userservice.mapper.SpareEmailMapper;

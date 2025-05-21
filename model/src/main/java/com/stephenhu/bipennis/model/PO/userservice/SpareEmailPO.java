@@ -18,7 +18,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @TableName(value = "s_email")
 @Entity
-public final class SpareEmailPO implements Serializable {
+public final class SpareEmailPO {
     @Id
     private String seId;
     private String uId;
