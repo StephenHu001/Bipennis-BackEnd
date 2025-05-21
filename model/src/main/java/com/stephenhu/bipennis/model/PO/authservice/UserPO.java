@@ -1,8 +1,5 @@
 package com.stephenhu.bipennis.model.PO.authservice;
 
-import java.io.Serializable;
-import java.util.Date;
-
 import com.baomidou.mybatisplus.annotation.TableName;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
