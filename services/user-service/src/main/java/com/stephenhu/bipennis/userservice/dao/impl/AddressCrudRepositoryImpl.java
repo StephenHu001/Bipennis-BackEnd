@@ -16,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author Stephen Hu
@@ -177,8 +176,8 @@ public class AddressCrudRepositoryImpl implements AddressCrudRepository {
     private Boolean isRightInsertAddressBO(AddressBO addressBO) {
         return addressBO.getUId() != null &&
                 !addressBO.getUId().trim().isEmpty() &&
-                addressBO.getIsPublic() != null &&
-                !addressBO.getIsPublic().trim().isEmpty() &&
+                addressBO.getAIsPublic() != null &&
+                !addressBO.getAIsPublic().trim().isEmpty() &&
                 addressBO.getLatitude() != null &&
                 !addressBO.getLatitude().trim().isEmpty() &&
                 addressBO.getLongitude() != null &&
@@ -188,8 +187,8 @@ public class AddressCrudRepositoryImpl implements AddressCrudRepository {
     }
 
     private Boolean isRightUpdateAddressBO(AddressBO addressBO) {
-        return addressBO.getIsPublic() != null &&
-                !addressBO.getIsPublic().trim().isEmpty() &&
+        return addressBO.getAIsPublic() != null &&
+                !addressBO.getAIsPublic().trim().isEmpty() &&
                 addressBO.getLatitude() != null &&
                 !addressBO.getLatitude().trim().isEmpty() &&
                 addressBO.getLongitude() != null &&

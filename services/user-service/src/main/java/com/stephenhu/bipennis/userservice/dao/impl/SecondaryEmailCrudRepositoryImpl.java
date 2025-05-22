@@ -176,7 +176,7 @@ public class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCrudRepos
     boolean isRightInsertSecondaryEmailBO(SecondaryEmailBO secondaryEmailBO) {
         if (secondaryEmailBO.getUId() == null || secondaryEmailBO.getUId().trim().isEmpty() ||
                 secondaryEmailBO.getReEmail() == null || secondaryEmailBO.getReEmail().trim().isEmpty() ||
-                secondaryEmailBO.getIsPublic() == null || secondaryEmailBO.getIsPublic().trim().isEmpty()) {
+                secondaryEmailBO.getReIsPublic() == null || secondaryEmailBO.getReIsPublic().trim().isEmpty()) {
             return false;
         }
         if (!EmailRegular.isEmail(secondaryEmailBO.getReEmail())) {
@@ -188,7 +188,7 @@ public class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCrudRepos
     boolean isRightUpdateSecondaryEmailBO(SecondaryEmailBO secondaryEmailBO) {
         if (secondaryEmailBO.getReId() == null || secondaryEmailBO.getReId().trim().isEmpty() ||
                 secondaryEmailBO.getUId() == null || secondaryEmailBO.getUId().trim().isEmpty() ||
-                secondaryEmailBO.getIsPublic() == null || secondaryEmailBO.getIsPublic().trim().isEmpty() ||
+                secondaryEmailBO.getReIsPublic() == null || secondaryEmailBO.getReIsPublic().trim().isEmpty() ||
                 secondaryEmailBO.getReEmail() == null || secondaryEmailBO.getReEmail().trim().isEmpty()) {
             return false;
         }

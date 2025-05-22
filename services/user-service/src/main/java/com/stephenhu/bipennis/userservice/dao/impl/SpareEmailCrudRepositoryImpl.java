@@ -175,7 +175,7 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
 
     boolean isRightInsertSpareEmailBO(SpareEmailBO spareEmailBO) {
         if (spareEmailBO.getUId() == null || spareEmailBO.getUId().trim().isEmpty() ||
-                spareEmailBO.getIsPublic() == null || spareEmailBO.getIsPublic().trim().isEmpty() ||
+                spareEmailBO.getSeIsPublic() == null || spareEmailBO.getSeIsPublic().trim().isEmpty() ||
                 spareEmailBO.getSeEmail() == null || spareEmailBO.getSeEmail().trim().isEmpty()) {
             return false;
         }
@@ -188,7 +188,7 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
     boolean isRightUpdateSpareEmailBO(SpareEmailBO spareEmailBO) {
         if (spareEmailBO.getSeId() == null || spareEmailBO.getSeId().trim().isEmpty() ||
                 spareEmailBO.getUId() == null || spareEmailBO.getUId().trim().isEmpty() ||
-                spareEmailBO.getIsPublic() == null || spareEmailBO.getIsPublic().trim().isEmpty() ||
+                spareEmailBO.getSeIsPublic() == null || spareEmailBO.getSeIsPublic().trim().isEmpty() ||
                 spareEmailBO.getSeEmail() == null || spareEmailBO.getSeEmail().trim().isEmpty()) {
             return false;
         }
