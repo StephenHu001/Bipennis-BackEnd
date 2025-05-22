@@ -8,7 +8,7 @@
         <id property="reId" column="re_id" jdbcType="BIGINT"/>
         <result property="uId" column="u_id" jdbcType="BIGINT"/>
         <result property="reEmail" column="re_email" jdbcType="VARCHAR"/>
-        <result property="isPublic" column="is_public" jdbcType="INTEGER"/>
+        <result property="reIsPublic" column="re_is_public" jdbcType="INTEGER"/>
         <result property="createAt" column="create_at" jdbcType="TIMESTAMP"/>
         <result property="updateAt" column="update_at" jdbcType="TIMESTAMP"/>
         <result property="reservedBigint1" column="reserved_bigint1" jdbcType="BIGINT"/>
@@ -31,7 +31,7 @@
 
     <sql id="Base_Column_List">
         re_id
-        ,u_id,re_email,is_public,
+        ,u_id,re_email,re_is_public,
         create_at,update_at,reserved_bigint1,
         reserved_bigint2,reserved_bigint3,reserved_bigint4,
         reserved_decimal1,reserved_decimal2,reserved_decimal3,

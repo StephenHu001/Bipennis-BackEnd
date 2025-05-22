@@ -14,6 +14,6 @@ import lombok.NoArgsConstructor;
 public final class SpareEmailBO{
     private String seId;
     private String uId;
-    private String isPublic;
+    private String seIsPublic;
     private String seEmail;
 }

@@ -22,7 +22,7 @@ public final class SpareEmailPO {
     @Id
     private String seId;
     private String uId;
-    private String isPublic;
+    private String seIsPublic;
     private String seEmail;
     private String createAt;
     private String updateAt;

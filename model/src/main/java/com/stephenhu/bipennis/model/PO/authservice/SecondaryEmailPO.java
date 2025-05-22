@@ -22,7 +22,7 @@ public final class SecondaryEmailPO {
     @Id
     private String reId;
     private String uId;
-    private String isPublic;
+    private String reIsPublic;
     private String reEmail;
     private String createAt;
     private String updateAt;

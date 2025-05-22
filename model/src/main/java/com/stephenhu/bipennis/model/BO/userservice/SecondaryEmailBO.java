@@ -13,6 +13,6 @@ import lombok.NoArgsConstructor;
 public final class SecondaryEmailBO {
     private String reId;
     private String uId;
-    private String isPublic;
+    private String reIsPublic;
     private String reEmail;
 }
