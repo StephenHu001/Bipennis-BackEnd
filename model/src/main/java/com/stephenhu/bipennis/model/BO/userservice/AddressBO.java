@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public final class AddressBO {
     private String aId;
     private String uId;
-    private String isPublic;
+    private String aIsPublic;
     private String city;
     private String latitude;
     private String longitude;

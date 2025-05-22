@@ -19,7 +19,7 @@ public final class AddressPO {
     @Id
     private String aId;
     private String uId;
-    private String isPublic;
+    private String aIsPublic;
     private String countryCode;
     private String stateProvince;
     private String city;
