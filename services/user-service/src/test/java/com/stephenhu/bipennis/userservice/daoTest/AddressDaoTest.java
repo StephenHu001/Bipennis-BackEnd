@@ -16,7 +16,7 @@ public class AddressDaoTest {
     public void insert() {
         AddressBO addressBO = new AddressBO();
         addressBO.setUId("1");
-        addressBO.setIsPublic("0");
+        addressBO.setAIsPublic("0");
         addressBO.setCity("Berlin");
         addressBO.setLatitude("52.5185");
         addressBO.setLongitude("13.4046");
@@ -38,7 +38,7 @@ public class AddressDaoTest {
         AddressBO addressBO = new AddressBO();
         addressBO.setAId("3");
         addressBO.setUId("10");
-        addressBO.setIsPublic("0");
+        addressBO.setAIsPublic("0");
         addressBO.setCity("China");
         addressBO.setLatitude("52.5185");
         addressBO.setLongitude("13.4046");

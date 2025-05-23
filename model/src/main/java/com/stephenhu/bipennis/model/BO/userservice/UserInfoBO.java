@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public final class UserInfoBO{
+    private String uiId;
     private String uId;
     private String firstName;
     private String lastName;

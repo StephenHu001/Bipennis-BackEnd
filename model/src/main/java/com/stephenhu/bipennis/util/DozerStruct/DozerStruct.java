@@ -3,6 +3,9 @@ package com.stephenhu.bipennis.util.DozerStruct;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 
 /**
  * @author Stephen Hu
@@ -19,6 +22,15 @@ public final class DozerStruct<Original, Target> {
      */
     public Target transForm(Original original, Class<Target> target) {
         return dozerMapper.map(original, target);
+    }
+
+    /**
+     * 转换集合对象
+     */
+    public List<Target> transFormList(List<Original> originalList, Class<Target> target) {
+        return originalList.stream()
+                .map(o -> dozerMapper.map(o, target))
+                .collect(Collectors.toList());
     }
 
 }

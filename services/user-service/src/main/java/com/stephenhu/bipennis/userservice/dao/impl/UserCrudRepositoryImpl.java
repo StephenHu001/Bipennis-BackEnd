@@ -119,7 +119,7 @@ public class UserCrudRepositoryImpl implements UserCrudRepository {
     @Override
     public ResponseResult<UserBO> find(UserBO userBO) {
         try {
-            if (!isRightUpdateFindUserBO(userBO)) {
+            if (userBO.getUId().isEmpty()) {
                 ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "UserCrudRepositoryImpl.find");
             }
             QueryWrapper<UserPO> queryWrapper = new QueryWrapper<>();
@@ -137,7 +137,7 @@ public class UserCrudRepositoryImpl implements UserCrudRepository {
                     e.getErrorCode(), e.getMessage(), e.getLocation());
             throw e;
         } catch (Exception e) {
-            logger.error("Unexpected error when querying Address for AddressBO: {}", userBO, e);
+            logger.error("Unexpected error when querying: {}", userBO, e);
             ErrorHandler.throwApiException(Code.INTERNAL, "UserCrudRepositoryImpl.find");
             return new ResponseResult<>();
         }

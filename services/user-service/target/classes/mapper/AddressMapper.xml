@@ -7,7 +7,7 @@
     <resultMap id="BaseResultMap" type="com.stephenhu.bipennis.model.PO.userservice.AddressPO">
             <id property="aId" column="a_id" jdbcType="BIGINT"/>
             <result property="uId" column="u_id" jdbcType="BIGINT"/>
-            <result property="isPublic" column="is_public" jdbcType="TINYINT"/>
+            <result property="aIsPublic" column="a_is_public" jdbcType="TINYINT"/>
             <result property="countryCode" column="country_code" jdbcType="CHAR"/>
             <result property="stateProvince" column="state_province" jdbcType="VARCHAR"/>
             <result property="city" column="city" jdbcType="VARCHAR"/>
@@ -38,7 +38,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        a_id,u_id,is_public,
+        a_id,u_id,a_is_public,
         country_code,state_province,city,
         district,street_address,postal_code,
         latitude,longitude,address_label,

@@ -75,7 +75,7 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
             }
 
             if (!isExists(spareEmailBO)) {
-                return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
+                ErrorHandler.throwApiException(Code.NOT_FOUND, "SpareEmailCrudRepositoryImpl.delete");
             }
 
             QueryWrapper<SpareEmailPO> queryWrapper = new QueryWrapper<>();

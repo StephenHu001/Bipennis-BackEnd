@@ -1,6 +1,10 @@
 server:
   port: 8081
 
+upload:
+  path: D:\Stephen Hu\Desktop\Bipennis\BackEnd\Bipennis-BackEnd\imgs
+
+
 spring:
   application:
     name: User-Service

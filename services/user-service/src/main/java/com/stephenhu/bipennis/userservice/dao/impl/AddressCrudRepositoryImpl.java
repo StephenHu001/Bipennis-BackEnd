@@ -75,7 +75,7 @@ public class AddressCrudRepositoryImpl implements AddressCrudRepository {
             }
 
             if (!isExists(addressBO)) {
-                return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
+                ErrorHandler.throwApiException(Code.NOT_FOUND, "AddressCrudRepositoryImpl.delete");
             }
 
             QueryWrapper<AddressPO> queryWrapper = new QueryWrapper<>();
@@ -112,7 +112,7 @@ public class AddressCrudRepositoryImpl implements AddressCrudRepository {
             }
 
             if (!isExists(addressBO)) {
-                return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
+                ErrorHandler.throwApiException(Code.NOT_FOUND, "AddressCrudRepositoryImpl.update");
             }
 
             AddressPO addressPO = new DozerStruct<AddressBO, AddressPO>().transForm(addressBO, AddressPO.class);

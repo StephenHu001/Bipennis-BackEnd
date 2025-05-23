@@ -16,7 +16,7 @@ public class SpareEmailDaoTest {
         SpareEmailBO spareEmailBO = new SpareEmailBO();
         spareEmailBO.setSeEmail("2693614095@qq.com");
         spareEmailBO.setUId("1");
-        spareEmailBO.setIsPublic("0");
+        spareEmailBO.setSeIsPublic("0");
         System.out.println(spareEmailCrudRepository.insert(spareEmailBO));
     }
     @Test
@@ -32,7 +32,7 @@ public class SpareEmailDaoTest {
         spareEmailBO.setSeId("3");
         spareEmailBO.setSeEmail("2603614095@qq.com");
         spareEmailBO.setUId("1");
-        spareEmailBO.setIsPublic("0");
+        spareEmailBO.setSeIsPublic("0");
         System.out.println(spareEmailCrudRepository.update(spareEmailBO));
     }
 

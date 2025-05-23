@@ -69,7 +69,7 @@ public class UserInfoDaoTest {
     @Test
     public void find() {
         UserInfoBO userInfoBO = new UserInfoBO();
-        userInfoBO.setUId("1");
+        userInfoBO.setUId("2");
         System.out.println(userInfoCrudRepository.find(userInfoBO));
     }
 }

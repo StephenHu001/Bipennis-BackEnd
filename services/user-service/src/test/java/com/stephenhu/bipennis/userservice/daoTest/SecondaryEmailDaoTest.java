@@ -15,7 +15,7 @@ public class SecondaryEmailDaoTest {
         SecondaryEmailBO secondaryEmailBO = new SecondaryEmailBO();
 
         secondaryEmailBO.setUId("1");
-        secondaryEmailBO.setIsPublic("1");
+        secondaryEmailBO.setReIsPublic("1");
         secondaryEmailBO.setReEmail("test347459@qq.com");
 
         System.out.println(secondaryEmailCrudRepository.insert(secondaryEmailBO));
@@ -37,7 +37,7 @@ public class SecondaryEmailDaoTest {
         SecondaryEmailBO secondaryEmailBO = new SecondaryEmailBO();
         secondaryEmailBO.setReId("4");
         secondaryEmailBO.setUId("1");
-        secondaryEmailBO.setIsPublic("0");
+        secondaryEmailBO.setReIsPublic("0");
         secondaryEmailBO.setReEmail("test347469@qq.com");
         System.out.println(secondaryEmailCrudRepository.update(secondaryEmailBO));
     }

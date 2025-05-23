@@ -181,7 +181,7 @@ public class UserInfoCrudRepositoryImpl implements UserInfoCrudRepository {
     @Override
     public ResponseResult<UserInfoBO> find(UserInfoBO userInfoBO) {
         try {
-            if (!isRightUpdateFindUserInfoBO(userInfoBO)){
+            if (userInfoBO.getUId().isEmpty()){
                 ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "UserInfoCrudRepositoryImpl.find");
             }
 
@@ -201,7 +201,7 @@ public class UserInfoCrudRepositoryImpl implements UserInfoCrudRepository {
                     e.getErrorCode(), e.getMessage(), e.getLocation());
             throw e;
         } catch (Exception e) {
-            logger.error("Unexpected error when querying Address for AddressBO: {}", userInfoBO, e);
+            logger.error("Unexpected error when querying: {}", userInfoBO, e);
             ErrorHandler.throwApiException(Code.INTERNAL, "UserInfoCrudRepositoryImpl.find");
             return new ResponseResult<>();
         }

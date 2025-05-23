@@ -75,7 +75,7 @@ public class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCrudRepos
             }
 
             if (!isExists(secondaryEmailBO)) {
-                return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
+                ErrorHandler.throwApiException(Code.NOT_FOUND, "SecondaryEmailCrudRepositoryImpl.delete");
             }
 
             QueryWrapper<SecondaryEmailPO> queryWrapper = new QueryWrapper<>();
