@@ -109,7 +109,7 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
     public ResponseResult<SpareEmailBO> update(SpareEmailBO spareEmailBO) {
         try {
             if (!isRightUpdateSpareEmailBO(spareEmailBO)) {
-                ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "SecondaryEmailCrudRepositoryImpl.update");
+                ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "SpareEmailCrudRepositoryImpl.update");
             }
 
             if (!isExists(spareEmailBO)) {
@@ -133,7 +133,7 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
                     e.getErrorCode(), e.getMessage(), e.getLocation());
             throw e;
         } catch (Exception e) {
-            logger.error("Unexpected error when querying Address for AddressBO: {}", spareEmailBO, e);
+            logger.error("Unexpected error when querying SpareEmail for SpareEmailBO: {}", spareEmailBO, e);
             ErrorHandler.throwApiException(Code.INTERNAL, "SpareEmailCrudRepositoryImpl.update");
             return new ResponseResult<>();
         }
@@ -187,7 +187,6 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
 
     boolean isRightUpdateSpareEmailBO(SpareEmailBO spareEmailBO) {
         if (spareEmailBO.getSeId() == null || spareEmailBO.getSeId().trim().isEmpty() ||
-                spareEmailBO.getUId() == null || spareEmailBO.getUId().trim().isEmpty() ||
                 spareEmailBO.getSeIsPublic() == null || spareEmailBO.getSeIsPublic().trim().isEmpty() ||
                 spareEmailBO.getSeEmail() == null || spareEmailBO.getSeEmail().trim().isEmpty()) {
             return false;

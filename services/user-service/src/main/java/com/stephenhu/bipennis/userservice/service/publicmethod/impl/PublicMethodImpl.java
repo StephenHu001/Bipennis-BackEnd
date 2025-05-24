@@ -206,7 +206,6 @@ public class PublicMethodImpl implements PublicMethod {
     @Override
     public boolean isRightUpdateSecondaryEmail(AllUserInformationDTO allUserInformationDTO) {
         if (allUserInformationDTO.getReId() == null || allUserInformationDTO.getReId().trim().isEmpty() ||
-                allUserInformationDTO.getUId() == null || allUserInformationDTO.getUId().trim().isEmpty() ||
                 allUserInformationDTO.getReIsPublic() == null || allUserInformationDTO.getReIsPublic().trim().isEmpty() ||
                 allUserInformationDTO.getReEmail() == null || allUserInformationDTO.getReEmail().trim().isEmpty()) {
             return false;

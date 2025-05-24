@@ -107,7 +107,7 @@ public class AddressCrudRepositoryImpl implements AddressCrudRepository {
     @Override
     public ResponseResult<AddressBO> update(AddressBO addressBO) {
         try {
-            if (!isRightUpdateAddressBO(addressBO) || addressBO.getUId() != null || addressBO.getUId().trim().isEmpty()) {
+            if (!isRightUpdateAddressBO(addressBO)) {
                 ErrorHandler.throwApiException(Code.INVALID_ARGUMENT, "AddressCrudRepositoryImpl.update");
             }
 

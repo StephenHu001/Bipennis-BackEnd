@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
     public ResponseResult<AllUserInformationDTO> insertAddress(AllUserInformationDTO allUserInformationDTO) {
         try {
 
-            if (!publicMethod.isRightInsertAddress(allUserInformationDTO)) {
+            if (publicMethod.isRightInsertAddress(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
@@ -325,7 +325,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult<AllUserInformationDTO> updateAvatar(String uId, MultipartFile avatarFile) {
         try {
-
             // 检查文件类型（仅允许图片）
             if (!avatarFile.getContentType().startsWith("image/")) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "ONLY IMG");
@@ -413,7 +412,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult<AllUserInformationDTO> updatePhone(AllUserInformationDTO allUserInformationDTO) {
         try {
-
             if (!publicMethod.isRightUpdatePhone(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
@@ -442,7 +440,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult<AllUserInformationDTO> updatePassword(AllUserInformationDTO allUserInformationDTO) {
         try {
-
             if (!publicMethod.isRightUpdatePassword(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
@@ -454,7 +451,7 @@ public class UserServiceImpl implements UserService {
             UserBO userBO = new DozerStruct<AllUserInformationDTO, UserBO>()
                     .transForm(allUserInformationDTO, UserBO.class);
 
-            if (userCrudRepository.updatePhone(userBO).getCode().equals(Code.OK)) {
+            if (userCrudRepository.updatePassword(userBO).getCode().equals(Code.OK)) {
                 return new ResponseResult<>(Code.OK, "USERINFO_UPDATE_SUCCESS");
             } else {
                 return new ResponseResult<>(Code.DATABASE_QUERY_ERROR, "DATABASE_QUERY_ERROR");
@@ -475,8 +472,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult<AllUserInformationDTO> updateSpareEmail(AllUserInformationDTO allUserInformationDTO) {
         try {
-
-            if (!publicMethod.isRightUpdateSpareEmail(allUserInformationDTO)) {
+            if (publicMethod.isRightUpdateSpareEmail(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
@@ -508,12 +504,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseResult<AllUserInformationDTO> updateSecondaryEmail(AllUserInformationDTO allUserInformationDTO) {
         try {
-
             if (!publicMethod.isRightUpdateSecondaryEmail(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
-            if (!EmailRegular.isEmail(allUserInformationDTO.getSeEmail())) {
+            if (!EmailRegular.isEmail(allUserInformationDTO.getReEmail())) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
