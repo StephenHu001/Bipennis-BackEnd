@@ -191,6 +191,8 @@ public class UserInfoCrudRepositoryImpl implements UserInfoCrudRepository {
 
             UserInfoPO userInfoPO = userInfoMapper.selectOne(queryWrapper);
 
+            userInfoPO.setAvatar("http://localhost:8081/avatar/"+userInfoPO.getAvatar());
+
             userInfoBO =  new DozerStruct<UserInfoPO, UserInfoBO>().transForm(userInfoPO, UserInfoBO.class);
 
             return new ResponseResult<>(Code.OK, "FOUND", userInfoBO);
