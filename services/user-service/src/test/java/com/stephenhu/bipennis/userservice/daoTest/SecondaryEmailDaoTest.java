@@ -48,4 +48,9 @@ public class SecondaryEmailDaoTest {
         secondaryEmailBO.setUId("1");
         System.out.println(secondaryEmailCrudRepository.find(secondaryEmailBO));
     }
+
+    @Test
+    public void isEmailExist() {
+        System.out.println(secondaryEmailCrudRepository.isEmailExist("test347459@qq.com"));
+    }
 }

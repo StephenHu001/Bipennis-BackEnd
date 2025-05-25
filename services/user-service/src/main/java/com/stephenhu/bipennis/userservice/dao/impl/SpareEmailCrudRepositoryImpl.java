@@ -2,6 +2,7 @@ package com.stephenhu.bipennis.userservice.dao.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.stephenhu.bipennis.model.BO.userservice.SpareEmailBO;
+import com.stephenhu.bipennis.model.PO.userservice.SecondaryEmailPO;
 import com.stephenhu.bipennis.model.PO.userservice.SpareEmailPO;
 import com.stephenhu.bipennis.userservice.dao.SpareEmailCrudRepository;
 import com.stephenhu.bipennis.userservice.mapper.SpareEmailMapper;
@@ -171,6 +172,13 @@ public class SpareEmailCrudRepositoryImpl implements SpareEmailCrudRepository {
             ErrorHandler.throwApiException(Code.INTERNAL, "SecondaryEmailCrudRepositoryImpl.find");
             return new ResponseResult<>();
         }
+    }
+
+    @Override
+    public boolean isEmailExist(String email) {
+        QueryWrapper<SpareEmailPO> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("se_email", email);
+        return spareEmailMapper.selectOne(queryWrapper) != null;
     }
 
     boolean isRightInsertSpareEmailBO(SpareEmailBO spareEmailBO) {

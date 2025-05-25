@@ -37,4 +37,11 @@ public interface SpareEmailCrudRepository {
      * @return ResponseResult<List<SpareEmailBO>>
      * */
     ResponseResult<List<SpareEmailBO>> find(SpareEmailBO spareEmailBO);
+    /**
+     * 查询邮箱是否存在
+     *
+     * @param email 查询条件
+     * @return boolean
+     * */
+    boolean isEmailExist(String email);
 }

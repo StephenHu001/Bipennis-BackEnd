@@ -37,4 +37,11 @@ public interface SecondaryEmailCrudRepository {
      * @return ResponseResult<AddressBO>
      * */
     ResponseResult<List<SecondaryEmailBO>> find(SecondaryEmailBO secondaryEmailBO);
+    /**
+     * 查询邮箱是否存在
+     *
+     * @param email 查询条件
+     * @return boolean
+     * */
+    boolean isEmailExist(String email);
 }

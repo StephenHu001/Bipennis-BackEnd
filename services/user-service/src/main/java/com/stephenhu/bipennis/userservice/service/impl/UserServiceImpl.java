@@ -98,6 +98,13 @@ public class UserServiceImpl implements UserService {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
+            if (spareEmailCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail()) ||
+                    secondaryEmailCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail()) ||
+                    userCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail())
+            ) {
+                return new ResponseResult<>(Code.ALREADY_EXISTS, "EMAIL_ALREADY_EXISTS");
+            }
+
             SpareEmailBO spareEmailBO = new DozerStruct<AllUserInformationDTO, SpareEmailBO>()
                     .transForm(allUserInformationDTO, SpareEmailBO.class);
 
@@ -126,6 +133,14 @@ public class UserServiceImpl implements UserService {
             if (!publicMethod.isRightInsertSecondaryEmail(allUserInformationDTO)) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
+
+            if (spareEmailCrudRepository.isEmailExist(allUserInformationDTO.getReEmail()) ||
+                    secondaryEmailCrudRepository.isEmailExist(allUserInformationDTO.getReEmail()) ||
+                    userCrudRepository.isEmailExist(allUserInformationDTO.getReEmail())
+            ) {
+                return new ResponseResult<>(Code.ALREADY_EXISTS, "EMAIL_ALREADY_EXISTS");
+            }
+
 
             SecondaryEmailBO secondaryEmailBO = new DozerStruct<AllUserInformationDTO, SecondaryEmailBO>()
                     .transForm(allUserInformationDTO, SecondaryEmailBO.class);
@@ -480,6 +495,13 @@ public class UserServiceImpl implements UserService {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
+            if (spareEmailCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail()) ||
+                    secondaryEmailCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail()) ||
+                    userCrudRepository.isEmailExist(allUserInformationDTO.getSeEmail())
+            ) {
+                return new ResponseResult<>(Code.ALREADY_EXISTS, "EMAIL_ALREADY_EXISTS");
+            }
+
             SpareEmailBO spareEmailBO = new DozerStruct<AllUserInformationDTO, SpareEmailBO>()
                     .transForm(allUserInformationDTO, SpareEmailBO.class);
 
@@ -512,6 +534,13 @@ public class UserServiceImpl implements UserService {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
 
+            if (spareEmailCrudRepository.isEmailExist(allUserInformationDTO.getReEmail()) ||
+                    secondaryEmailCrudRepository.isEmailExist(allUserInformationDTO.getReEmail()) ||
+                    userCrudRepository.isEmailExist(allUserInformationDTO.getReEmail())
+            ) {
+                return new ResponseResult<>(Code.ALREADY_EXISTS, "EMAIL_ALREADY_EXISTS");
+            }
+
             SecondaryEmailBO secondaryEmailBO = new DozerStruct<AllUserInformationDTO, SecondaryEmailBO>().transForm(allUserInformationDTO, SecondaryEmailBO.class);
 
             if (secondaryEmailCrudRepository.update(secondaryEmailBO).getCode().equals(Code.OK)) {
@@ -538,7 +567,7 @@ public class UserServiceImpl implements UserService {
             if (allUserInformationDTO.getUId() == null || allUserInformationDTO.getUId().trim().isEmpty()) {
                 return new ResponseResult<>(Code.INVALID_ARGUMENT, "INVALID_ARGUMENT");
             }
-            if (userCrudRepository.find(new DozerStruct<AllUserInformationDTO, UserBO>().transForm(allUserInformationDTO, UserBO.class)).getCode().equals(Code.NOT_FOUND)){
+            if (userCrudRepository.find(new DozerStruct<AllUserInformationDTO, UserBO>().transForm(allUserInformationDTO, UserBO.class)).getCode().equals(Code.NOT_FOUND)) {
                 return new ResponseResult<>(Code.NOT_FOUND, "NOT_FOUND");
             }
 

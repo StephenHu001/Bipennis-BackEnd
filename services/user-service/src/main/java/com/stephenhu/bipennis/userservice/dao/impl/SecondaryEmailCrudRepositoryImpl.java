@@ -173,6 +173,13 @@ public class SecondaryEmailCrudRepositoryImpl implements SecondaryEmailCrudRepos
         }
     }
 
+    @Override
+    public boolean isEmailExist(String email) {
+        QueryWrapper<SecondaryEmailPO> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("re_email", email);
+        return secondaryEmailMapper.selectOne(queryWrapper) != null;
+    }
+
     boolean isRightInsertSecondaryEmailBO(SecondaryEmailBO secondaryEmailBO) {
         if (secondaryEmailBO.getUId() == null || secondaryEmailBO.getUId().trim().isEmpty() ||
                 secondaryEmailBO.getReEmail() == null || secondaryEmailBO.getReEmail().trim().isEmpty() ||

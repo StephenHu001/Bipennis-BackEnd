@@ -30,4 +30,12 @@ public interface UserCrudRepository {
      * @return ResponseResult<UserBO>
      * */
     ResponseResult<UserBO> find(UserBO userBO);
+
+    /**
+     * 查询邮箱是否存在
+     *
+     * @param email 查询条件
+     * @return boolean
+     * */
+    boolean isEmailExist(String email);
 }

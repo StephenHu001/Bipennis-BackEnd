@@ -143,6 +143,13 @@ public class UserCrudRepositoryImpl implements UserCrudRepository {
         }
     }
 
+    @Override
+    public boolean isEmailExist(String email) {
+        QueryWrapper<UserPO> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("u_email", email);
+        return userMapper.selectOne(queryWrapper) != null;
+    }
+
     public boolean isRightUpdatePhoneUserBO(UserBO userBO) {
         return
                 // 必须为非null或空白字符串的字段
