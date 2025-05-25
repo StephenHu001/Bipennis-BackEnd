@@ -28,7 +28,7 @@ public final class UserInfoCrudRepositoryImpl implements UserInfoCrudRepository 
 
     private static final String DEFAULT_GENDER = "保密";
 
-    private static final String DEFAULT_AVATAR = "default.png";
+    private static final String DEFAULT_AVATAR = "default/default.png";
 
     private final UserInfoMapper userInfoMapper;
 
