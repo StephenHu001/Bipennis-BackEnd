@@ -1,6 +1,14 @@
 server:
   port: 8080
 
+sa-token:
+  token-name: Authorization  # 请求头名称
+  token-prefix: Bearer       # token 前缀
+  timeout: 86400  # token 有效期（秒）
+  is-concurrent: false  # 是否允许同一账号多设备登录
+  token-type: redis  # 使用 Redis 存储 token
+
+
 spring:
   application:
     name: auth-service

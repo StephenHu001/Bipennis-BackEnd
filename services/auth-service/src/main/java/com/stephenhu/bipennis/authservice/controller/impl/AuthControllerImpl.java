@@ -1,7 +1,7 @@
 package com.stephenhu.bipennis.authservice.controller.impl;
 
+import cn.dev33.satoken.stp.SaTokenInfo;
 import com.stephenhu.bipennis.authservice.controller.publicmethod.JudgeMethod;
-import com.stephenhu.bipennis.authservice.dao.impl.SpareEmailCrudRepositoryImpl;
 import com.stephenhu.bipennis.authservice.service.AuthService;
 import com.stephenhu.bipennis.authservice.controller.AuthController;
 import com.stephenhu.bipennis.model.DTO.autherservice.LoginDTO;
@@ -13,10 +13,12 @@ import com.stephenhu.bipennis.util.GlobalExceptionHandler.code.Code;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ApiException;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.response.ResponseResult;
+import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * @author Stephen Hu
@@ -40,7 +42,7 @@ public final class AuthControllerImpl implements AuthController{
 
 
     @Override
-    public ResponseResult<LoginPageVO> login(LoginPageVO loginPageVO) {
+    public ResponseResult<SaTokenInfo> login(LoginPageVO loginPageVO) {
         if (!judgeMethod.isRightLoginPageVO(loginPageVO)){
             return new ResponseResult<>(Code.INVALID_ARGUMENT, "Invalid Login parameter");
         }
@@ -48,9 +50,9 @@ public final class AuthControllerImpl implements AuthController{
         try {
             LoginDTO loginDTO = new DozerStruct<LoginPageVO, LoginDTO>().transForm(loginPageVO, LoginDTO.class);
 
-            ResponseResult<LoginDTO> responseResult = authService.login(loginDTO);
+            ResponseResult<SaTokenInfo> responseResult = authService.login(loginDTO);
 
-            return new ResponseResult<>(responseResult.getCode(), responseResult.getMsg());
+            return new ResponseResult<>(responseResult.getCode(), responseResult.getMsg(),responseResult.getData());
 
             //统一异常处理
         } catch (ApiException e) {
@@ -87,6 +89,25 @@ public final class AuthControllerImpl implements AuthController{
         } catch (Exception e) {
             logger.error("Unexpected error when login for LoginPageVO: {}", registerPageVO, e);
             ErrorHandler.throwApiException(Code.INTERNAL, "AuthControllerImpl.register");
+            return new ResponseResult<>();
+        }
+    }
+
+    @Override
+    public ResponseResult<String> verifyToken(HttpServletRequest request) {
+        try{
+
+            String result = authService.verifyToken(request);
+
+            if(result.equals(Code.OK)){
+                return new ResponseResult<>(Code.OK, "Already Login");
+            }else {
+                return new ResponseResult<>(Code.UNAUTHENTICATED, "Token is invalid");
+            }
+
+        }catch (Exception e){
+            logger.error("Unexpected error when verifyToken", e);
+            ErrorHandler.throwApiException(Code.INTERNAL, "AuthControllerImpl.verifyToken");
             return new ResponseResult<>();
         }
     }

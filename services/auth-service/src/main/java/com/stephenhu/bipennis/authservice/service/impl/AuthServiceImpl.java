@@ -1,6 +1,8 @@
 package com.stephenhu.bipennis.authservice.service.impl;
 
 import cn.dev33.satoken.secure.BCrypt;
+import cn.dev33.satoken.stp.SaTokenInfo;
+import cn.dev33.satoken.stp.StpUtil;
 import com.stephenhu.bipennis.authservice.service.AuthService;
 import com.stephenhu.bipennis.authservice.dao.SecondaryEmailCrudRepository;
 import com.stephenhu.bipennis.authservice.dao.UserCrudRepository;
@@ -19,10 +21,13 @@ import com.stephenhu.bipennis.util.GlobalExceptionHandler.error.ErrorHandler;
 import com.stephenhu.bipennis.util.GlobalExceptionHandler.response.ResponseResult;
 import com.stephenhu.bipennis.util.Regular.EmailRegular;
 import com.stephenhu.bipennis.util.Regular.PhoneRegular;
+import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Enumeration;
 
 /**
  * @author Stephen Hu
@@ -52,7 +57,7 @@ public final class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public ResponseResult<LoginDTO> login(LoginDTO loginDTO) {
+    public ResponseResult<SaTokenInfo> login(LoginDTO loginDTO) {
         // 获取参数并合并校验
         String account = loginDTO.getAccount();
         String originPassword = loginDTO.getOriginPassword();
@@ -91,7 +96,12 @@ public final class AuthServiceImpl implements AuthService {
                 return new ResponseResult<>(Code.NOT_FOUND, "User not found");
             }
             logger.info("Login successful for user: {}", account);
-            return new ResponseResult<>(Code.OK, "LOGIN OK");
+
+            StpUtil.login(uId);
+
+            SaTokenInfo satokenInfo = StpUtil.getTokenInfo();
+
+            return new ResponseResult<>(Code.OK, "Login Success",satokenInfo);
 
         } catch (ApiException e) {
             logger.error("Business error during login: Code={}, Message={}, Location={}",
@@ -147,6 +157,20 @@ public final class AuthServiceImpl implements AuthService {
             return new ResponseResult<>();
         }
         return null;
+    }
+
+    @Override
+    public String verifyToken(HttpServletRequest request) {
+        try{
+            if(StpUtil.isLogin()){
+                return Code.OK;
+            }else {
+                return Code.UNAUTHENTICATED;
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return Code.INTERNAL;
+        }
     }
 
     /**
