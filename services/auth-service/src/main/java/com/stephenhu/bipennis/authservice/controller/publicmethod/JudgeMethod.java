@@ -20,8 +20,8 @@ public final class JudgeMethod {
     public boolean isRightRegisterPageVO(RegisterPageVO registerPageVO){
         if (registerPageVO.getUPhone() == null ||
                 registerPageVO.getUPhone().trim().isEmpty() ||
-                registerPageVO.getLastName() == null ||
-                registerPageVO.getLastName().trim().isEmpty() ||
+                registerPageVO.getFirstName() == null ||
+                registerPageVO.getFirstName().trim().isEmpty() ||
                 registerPageVO.getHashPassword() == null ||
                 registerPageVO.getHashPassword().trim().isEmpty() ||
                 registerPageVO.getBirthdate() == null ||
